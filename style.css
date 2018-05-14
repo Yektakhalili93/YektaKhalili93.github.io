@@ -1,0 +1,209 @@
+
+body, html {
+    height: 100%;
+}
+
+.my_name{
+    text-align: center;
+    font-size: 72px;
+    font-family: Freestyle Script;
+}
+
+
+
+.home_pg{
+    
+    background-image: url(home_pg.JPEG);
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+        
+
+}
+
+
+
+#about_btn { 
+    margin: 100px 700px 20px 80px;
+    color: white;
+    font-size: 20px;
+    background-color: #336699;
+    
+    
+
+
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    color: white;
+}
+
+a:hover {
+    color: white;
+}
+
+
+
+
+#portfolio_btn {
+    margin: 50px 700px 20px 80px;
+    color: white;
+    font-size: 20px;
+    background-color: #336699;
+    
+    
+}
+
+#contact_btn{
+    margin: 50px 700px 100px 80px;
+    color: white;
+    font-size: 20px;
+    background-color: #336699;
+   
+    
+    
+}
+
+#about_pg {
+    background-image: url(about_me.jpg);
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.abt_me {
+    text-align: left;
+    color: #993333;
+    font-size: 80px;
+    font-family: Berlin Sans FB;
+    margin: auto auto auto 30px;
+}
+
+#l1 {
+    margin: 100px auto auto 40px;
+}
+
+#l2, #l3, #l4, #l5, #l6 {
+    margin: 20px auto auto 40px;
+}
+
+ 
+
+li {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0.5;
+}
+
+#portfolio_pg {
+    background-color: grey;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+
+img {
+    height: 300px;
+    width: 300px;
+}
+
+.pic1 {
+    margin: 30px auto auto 300px;
+}
+
+.inline-block, .same-line {
+    display: inline-block;
+}
+
+.pic3 {
+    margin: 30px auto auto 500px; 
+}
+
+.pic2, .pic4 {
+    margin-left: 20px;
+}
+
+#contact_pg {
+    background-color: #9fb2c6;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    
+}
+
+
+.fa-instagram {
+    background: #5b00a4;
+    color: white;
+    margin: 20px auto auto 300px;
+}
+
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+    margin: 20px auto auto 600px;
+}
+
+.fa-linkedin {
+    background: #0099ff;
+    color: white;
+    margin: 20px auto auto 300px;
+}
+
+.contact_header {
+    text-align: center;
+    font-size: 50px;
+    font-family: fantasy;
+    color: darkslateblue;
+    
+}
+
+p {
+    font-size: 30px;
+    font-family: fantasy;
+    color: darkblue;
+}
+
+#name, #email, #subject {
+    margin-bottom: 10px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
