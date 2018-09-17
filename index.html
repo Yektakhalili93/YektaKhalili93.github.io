@@ -1,83 +1,75 @@
 <!DOCTYPE html>
-
 <html>
-    <head>
-        <title>Yekta Khalili</title>
-        <link href="style.css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
-    
-    <body>
-        <div id="main">
-            <div id="home" class="home_pg">
-                <h1 class="my_name">Yekta Khalili</h1>
-                <button type="submit" id="about_btn" class="btn"><a id="abt" href="#about_pg">About Me</a></button><br>
-                <button type="submit" id="portfolio_btn" class="btn"><a id="port" href="#portfolio_pg">Portfolio</a></button><br>
-                <button type="submit" id="contact_btn" class="btn"><a id="contact_link" href="#contact_pg">Contact Me</a></button><br>
-        
-            </div>
-        </div>
-      
-        <div id="about_pg" class="about_pg">
-            <h1 class="abt_me">About Me</h1>
-            <ul>
-                <li id="l1">Creative</li>
-                <li id="l2">Photographer</li>
-                <li id="l3">Filmmaker</li>
-                <li id="l4">Mathematician</li>
-                <li id="l5">Computer Scientist</li>
-                <li id="l6">Web Developer</li>
-            </ul>
-        </div>
-        
-        <div class="portfoloio_pg" id="portfolio_pg">
-            <div class="pic1 inline-block">
-                <a href="https://500px.com/photo/257859293/dsc-by-yekta-khalili" alt="glass"><img src="glass.jpg"></a>
-            </div>
-            <div class="pic2 inline-block" >
-                <a href="https://500px.com/photo/257875179/nutella-and-milk-by-yekta-khalili" alt="Nutella"><img src="Nutella%20and%20Milk.jpg"></a>
-            </div><br>
-            <div class="pic3 same-line">
-                <a href="https://500px.com/photo/257859229/mug-by-yekta-khalili" alt="mug"><img src="Mug.jpg"></a>
-            </div>
-            <div class="pic4 same-line">
-                <a href="https://500px.com/photo/257859291/dsc-by-yekta-khalili" alt="vase"><img src="vase.jpg"></a>
-            </div>
+   <header>
+     <title>Suvery Form</title>
+     <link rel="stylesheet" href="style.css">
+  </header>
+   <body>
+     <h1>Survey Form</h1>
+     <div class="form">
+       <form action="/action_page.php" method=get>
+         <p id="p1">Let us know how we can improve freeCodeCamp</p>
+<!--          <p id="p2">* Name : </p> -->
+         <div id="p2"><label>* Name: </label><input type="text" placeholder="Enter your name"><br></div>
+         <div id="p3"><label>* Email: </label> <input type="text" placeholder="Enter your Email"><br></div>
+         <div id="p4"><label id="p4_age">* Age: </label> <input type="text" placeholder="Age"><br></div>
+         <div id="p5"><label id="p5_lab">Which option best describes your current role? </label>
+         <select name="role">
+           <option value="student">Student</option>
+           <option value="ftj">Full Time Job</option>
+           <option value="ftl">Full Time Learner</option>
+           <option value="pnts">Prefer Not to Say</option>
+           <option value="other">Other</option>
+         </select>
+         </div>
+         <div id="p6">
+           <label for="radios" id="p6_l">*How likely is that you would recommend freeCodeCamp to a friend?</label>
+           <form action="input">
+             <input type="radio"> Definitely <br>
+             <input type="radio" id="r_2"> Maybe <br>
+             <input type="radio" id="r_3"> Not Sure
+           </form>
+         </div>
+         <div id="p7">
+           <label for="q" id="q">What do you like most in FCC:</label><select name="fcc" id="select_fcc">
+               <option value="challeng">Challenges</option>
+               <option value="proj">Projects</option>
+               <option value="com">Community</option>
+               <option value="os">Open Source</option>
+             </select>
+         </div>
 
-        
-        
-        
-        </div>
-        
-        <div class="contact_pg" id="contact_pg">
-            <h1 class="contact_header">Contact ME</h1>
-            <a href="https://twitter.com/yektakhalili" class="fa fa-twitter"></a>
-            <a href="https://www.instagram.com/yektaakhalili/" class="fa fa-instagram"></a>
-            <a href="#" class="fa fa-linkedin"></a>
-            <p>Or just shoot me an email:</p>
-            <div>
-                <form>
-                    <input id="name" type="text" placeholder="Name"><br>
-                    <input id="email" type="email" placeholder="Email" required><br>
-                    <input id="subject" type="text" placeholder="Subject" required><br>
-                    <textarea id="txt" rows="10" cols="50"></textarea>   
-                </form>
-                
-            
-            
-            </div>
-            
-        </div>
-    
-    
-    
-    
-    </body>
+         <div id="p8">
+           <label for="improv">Things that should be improved in the future
+(Check all that apply):</label>
+           <form action="input" method="get" id="prov">
+             <input type="checkbox">Front-end Projects<br>
+             <input type="checkbox">Back-end Projects<br>
+             <input type="checkbox">Data Visualization<br>
+             <input type="checkbox">Challenges<br>
+             <input type="checkbox">Open Source Community<br>
+             <input type="checkbox">Gitter help rooms<br>
+             <input type="checkbox">Videos<br>
+             <input type="checkbox">City Meetups<br>
+             <input type="checkbox">Wiki<br>
+             <input type="checkbox">Forum<br>
+             <input type="checkbox">Additional Courses<br>
+           </form>
+         </div>
 
+         <div id="p9">
+           <p id="p9_p">Any Comments or Suggestions?</p>
+           <textarea name="txtt" id="txta" cols="30" rows="5">Enter your comment here... </textarea>
+         </div>
 
+         <div class="sbmt">
+           <button>Submit</button>
+         </div>
+       </form>
+     </div>
+   </body>
+
+<br>
 
 
 
